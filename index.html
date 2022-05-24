@@ -15,22 +15,44 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
+    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select d-flex justify-content-between">
+      <a class="navbar-brand ms-3 " href="#">
         <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
           loading="lazy">
         <span class="ms-2">bossMonsterMvc</span>
       </a>
+      <span id="gold" class="me-5">0</span>
     </nav>
   </header>
   <main>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
-        </div>
+      <div id="heros" class="row my-2">
+        <!-- Hero -->
+        <!-- <div class="col-md-3 p-3 rounded shadow d-flex flex-column align-items-center">
+          <h4>name</h4>
+          <img class="hero-img" src="./assets/img/SwitchAxe.webp" alt="">
+          <h4><b class="text-success">100</b></h4>
+          <button class="btn btn-warning">buy 100</button>
+        </div> -->
+        <!--  -->
       </div>
-    </div>
+      <div class="row">
+        <!-- Attack button -->
+        <button class="btn btn-primary" onclick="app.herosController.attackBoss()">attack</button>
+      </div>
+      <div id="boss" class="row justify-content-center mt-3">
+        <!-- BOss -->
+        <!-- <div  class="col-6 bg-dark text-light p-3 rounded d-flex flex-column align-items-center">
+          <h2>Name <span>level</span></h2>
+          <img src="./assets/img/Anji.gif" alt="">
+          <div class="progress w-100">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">100</div>
+          </div>
+        </div>
+      </div> -->
+        <!--  -->
+      </div>
   </main>
   <footer class="bg-dark text-light">
     <div class="text-center no-select">

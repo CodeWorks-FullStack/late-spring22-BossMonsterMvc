@@ -1,7 +1,12 @@
-import { ValuesController } from "./Controllers/ValuesController.js";
+import { BossesController } from "./Controllers/BossesController.js";
+import { HerosController } from "./Controllers/HerosController.js";
 
 class App {
-  valuesController = new ValuesController();
+  // NOTE Comment out this line and values stuff will never hurt you.
+  // valuesController = new ValuesController();
+  
+  bossesController = new BossesController()
+  herosController = new HerosController()
 }
 
 window["app"] = new App();
